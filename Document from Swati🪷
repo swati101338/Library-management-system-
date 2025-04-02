@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <title>Admin Login - Library Management System</title>
+    <style type="text/css">
+      body {
+    background-image: url("image23.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 10px #00000060;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+      </style> 
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login / Add Admin</h2>
+        <form action="dashboard.html" method="POST">
+        <form action="all_in_one.php" method="POST">
+            <div class="form-group">
+                <label for="admin_username">Username</label>
+                <input type="text" id="admin_username" name="admin_username" placeholder="Enter username" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="admin_email">Email (optional)</label>
+                <input type="email" id="admin_email" name="admin_email" placeholder="Enter email (optional)">
+            </div>
+    
+            <div class="form-group">
+                <label for="admin_password">Password</label>
+                <input type="password" id="admin_password" name="admin_password" placeholder="Enter password" required>
+            </div>
+    
+            <div class="form-group">
+                <input type="submit" value="Login / Save Admin">
+            </div>
+        </form>
+        </form>
+    </div>
+    
+    
+    <script>
+       document.getElementById('loginForm').addEventListener('submit', function(event) {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (username === '' || password === '') {
+        alert('Please fill in both fields.');
+        event.preventDefault();
+    }
+});
+ 
+    </script>
+</body>
+</html>
